@@ -1,17 +1,19 @@
 class Vi{
     constructor(){
         //this.index = null;
-       // this.cases = 0;
+        this.cases = 0;
         this.name = null;
     }
 
-    update(cas){
+    update(){
         var viIndex = "vi";
         database.ref(viIndex).set({
             name:this.name,
-            cases: cas
+            cases:this.cases
         });
     }
+
+    //getCases
 
     static updateVi(){
         database.ref('/').update({
