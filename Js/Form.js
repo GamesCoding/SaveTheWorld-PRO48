@@ -78,9 +78,9 @@ class Form {
       player.update();
       player.updateCount(playerCount);
       this.greeting.html("Oh no! " + player.name + " there is a new virus and only you can find a vaccine for it by doing tasks before");
-      this.greeting.position(displayWidth/2 - 450, 300); 
-      this.greeting2.html(" 2 million cases! You must Save The World!");
-      this.greeting2.position(displayWidth/2 - 200, 325);
+      this.greeting.position(300, 300); 
+      this.greeting2.html(" 2 million cases! You must Save The World! (Use touch in mobile or use mouse in computer to move).");
+      this.greeting2.position(260, 325);
     });
 
     this.continue.mousePressed(()=>{
