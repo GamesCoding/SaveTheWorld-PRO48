@@ -10,7 +10,7 @@ var database;
 
 var lab1, lab2, lab3, dish1, vi1, bact1, bact2, bact3, bact4, finished, lost;
 
-var dish;
+var dish, dish1;
 
 var viGroup, otherMicrobesGroup;
 
@@ -73,6 +73,8 @@ function draw(){
       vi.cases = vi.cases+100000;
 
       vi.update();
+
+      touchMoved();
     }
 
   }
@@ -101,4 +103,8 @@ function draw(){
   if(vi.cases >= 2000000){
     game.lose();
   }
+}
+
+function touchMoved(){
+  return dish.x;
 }

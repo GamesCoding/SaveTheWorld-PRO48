@@ -64,7 +64,7 @@ class Game {
 
         dish.visible = true;
 
-        dish.x = mouseX;
+        dish.x = mouseX || dish1.x;
         //dish.y = mouseY;
         dish.shapeColor = "blue";
 
