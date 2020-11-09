@@ -8,7 +8,7 @@ var cases;
 var stock;
 var database;
 
-var lab1, lab2, lab3, dish1, vi1, bact1, bact2, bact3, bact4, finished, lost;
+var lab1, lab2, lab3, dish1, vi1, bact1, bact2, bact3, bact4, greet, finished, lost;
 
 var dish, dish1;
 
@@ -63,6 +63,12 @@ function draw(){
   
   if(gameState === 1){
     game.start();
+    if(player.name !== null && gameState < 2){
+      textSize(24)
+      fill("whitesmoke")
+      text("Oh no! " + player.name + " there is a new virus and only you can find a vaccine for it by doing tasks before",70,150);
+      text(" 2 million cases! You must Save The World! (Use touch in mobile or use mouse in computer to move).",-3,185);
+    }
   }
   
   if(gameState === 2){

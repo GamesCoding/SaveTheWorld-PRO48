@@ -54,7 +54,14 @@ class Game {
       }
     
     }
-
+/*
+    async greet(){
+      textSize(25)
+      fill("black")
+      text("Oh no! " + player.name + " there is a new virus and only you can find a vaccine for it by doing tasks before",90,90)
+      text(" 2 million cases! You must Save The World! (Use touch in mobile or use mouse in computer to move).",90,125)
+    }
+*/
     play1(){
       form.hide();
 
@@ -210,7 +217,7 @@ class Game {
         background(finished,1075,500);
 
         textSize(30)
-        fill("black");
+        fill("white");
         text("Congratulations " + player.name + "! You have finally eradicated the " + vi.name + " virus!",50,430);
         text("You have Saved The World!",375,460);
 
